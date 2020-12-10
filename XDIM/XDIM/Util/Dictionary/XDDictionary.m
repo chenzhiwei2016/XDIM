@@ -16,7 +16,7 @@
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted  error:&error];
     NSString *jsonString;
     if (error) {
-        jsonString = [NSString stringWithFormat:@"%@",self];
+        jsonString = [NSString stringWithFormat:@"%@",dic];
     }else {
         jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     }

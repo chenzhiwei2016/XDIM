@@ -25,6 +25,10 @@
 		5C0B6F8D256646D700D0CA69 /* XDMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0B6F8C256646D700D0CA69 /* XDMessageView.m */; };
 		5C0B6FAF25664DDD00D0CA69 /* XDBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0B6FAE25664DDD00D0CA69 /* XDBubbleView.m */; };
 		5C0B6FB52566648900D0CA69 /* XDMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0B6FB42566648900D0CA69 /* XDMessageCell.m */; };
+		5C64BEBC2581BD9D001B1756 /* XDCheckView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C64BEBA2581BD9D001B1756 /* XDCheckView.m */; };
+		5CC84A4025776B19001BA26C /* XDCalendarUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC84A3F25776B19001BA26C /* XDCalendarUtil.m */; };
+		5CC84A5625777A38001BA26C /* XDFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC84A5525777A38001BA26C /* XDFrame.m */; };
+		5CC84A6225778F8B001BA26C /* XDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC84A6125778F8B001BA26C /* XDNavigationController.m */; };
 		5CDC6BF625676B83007F95E0 /* XDMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDC6BF525676B83007F95E0 /* XDMessageModel.m */; };
 		5CDC6C10256772E1007F95E0 /* XDVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDC6C0F256772E1007F95E0 /* XDVideoViewController.m */; };
 		5CDC6C24256792AE007F95E0 /* XDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDC6C23256792AE007F95E0 /* XDLoginViewController.m */; };
@@ -87,6 +91,15 @@
 		5C0B6FAE25664DDD00D0CA69 /* XDBubbleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDBubbleView.m; sourceTree = "<group>"; };
 		5C0B6FB32566648900D0CA69 /* XDMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDMessageCell.h; sourceTree = "<group>"; };
 		5C0B6FB42566648900D0CA69 /* XDMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDMessageCell.m; sourceTree = "<group>"; };
+		5C64BEBA2581BD9D001B1756 /* XDCheckView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDCheckView.m; sourceTree = "<group>"; };
+		5C64BEBB2581BD9D001B1756 /* XDCheckView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDCheckView.h; sourceTree = "<group>"; };
+		5CC84A3E25776B19001BA26C /* XDCalendarUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDCalendarUtil.h; sourceTree = "<group>"; };
+		5CC84A3F25776B19001BA26C /* XDCalendarUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDCalendarUtil.m; sourceTree = "<group>"; };
+		5CC84A5425777A38001BA26C /* XDFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDFrame.h; sourceTree = "<group>"; };
+		5CC84A5525777A38001BA26C /* XDFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDFrame.m; sourceTree = "<group>"; };
+		5CC84A5A25777B8E001BA26C /* Methods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Methods.h; sourceTree = "<group>"; };
+		5CC84A6025778F8B001BA26C /* XDNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDNavigationController.h; sourceTree = "<group>"; };
+		5CC84A6125778F8B001BA26C /* XDNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDNavigationController.m; sourceTree = "<group>"; };
 		5CDC6BF425676B83007F95E0 /* XDMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDMessageModel.h; sourceTree = "<group>"; };
 		5CDC6BF525676B83007F95E0 /* XDMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDMessageModel.m; sourceTree = "<group>"; };
 		5CDC6C0E256772E1007F95E0 /* XDVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDVideoViewController.h; sourceTree = "<group>"; };
@@ -153,6 +166,7 @@
 				5C0B6ECB2565115900D0CA69 /* Info.plist */,
 				5C0B6ECC2565115900D0CA69 /* main.m */,
 				5C0B6F9425664A0500D0CA69 /* PrefixHeader.pch */,
+				5CC84A5A25777B8E001BA26C /* Methods.h */,
 			);
 			path = XDIM;
 			sourceTree = "<group>";
@@ -197,6 +211,8 @@
 		5C0B6F062565134400D0CA69 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				5C64BEB92581BD9D001B1756 /* Check */,
+				5CC84A3D257768EB001BA26C /* Calendar */,
 				5CDC6C042567726D007F95E0 /* BGVideo */,
 				5C0B6FB92566776000D0CA69 /* Bubble */,
 				5C0B6F762566406600D0CA69 /* Frame */,
@@ -270,6 +286,8 @@
 				5C0B6FA925664C3700D0CA69 /* DeviceFrame.h */,
 				5C0B6F81256642A900D0CA69 /* UIView+XDFrame.h */,
 				5C0B6F82256642A900D0CA69 /* UIView+XDFrame.m */,
+				5CC84A5425777A38001BA26C /* XDFrame.h */,
+				5CC84A5525777A38001BA26C /* XDFrame.m */,
 			);
 			path = Frame;
 			sourceTree = "<group>";
@@ -294,6 +312,33 @@
 			path = Bubble;
 			sourceTree = "<group>";
 		};
+		5C64BEB92581BD9D001B1756 /* Check */ = {
+			isa = PBXGroup;
+			children = (
+				5C64BEBA2581BD9D001B1756 /* XDCheckView.m */,
+				5C64BEBB2581BD9D001B1756 /* XDCheckView.h */,
+			);
+			path = Check;
+			sourceTree = "<group>";
+		};
+		5CC84A3D257768EB001BA26C /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				5CC84A3E25776B19001BA26C /* XDCalendarUtil.h */,
+				5CC84A3F25776B19001BA26C /* XDCalendarUtil.m */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		5CC84A5F25778ED2001BA26C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5CC84A6025778F8B001BA26C /* XDNavigationController.h */,
+				5CC84A6125778F8B001BA26C /* XDNavigationController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		5CDC6BF325676B2C007F95E0 /* M */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +351,7 @@
 		5CDC6BFD25677048007F95E0 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				5CC84A5F25778ED2001BA26C /* Base */,
 				5CDC6C1F2567926C007F95E0 /* Account */,
 				5C0B6EF5256511AE00D0CA69 /* Chat */,
 			);
@@ -491,8 +537,12 @@
 				5C0B6F412565190100D0CA69 /* XDArray.m in Sources */,
 				5CDC6C24256792AE007F95E0 /* XDLoginViewController.m in Sources */,
 				5C0B6EFF2565124F00D0CA69 /* XDChatViewController.m in Sources */,
+				5CC84A6225778F8B001BA26C /* XDNavigationController.m in Sources */,
 				5C0B6F5C256519BE00D0CA69 /* XDLog.m in Sources */,
+				5CC84A5625777A38001BA26C /* XDFrame.m in Sources */,
+				5CC84A4025776B19001BA26C /* XDCalendarUtil.m in Sources */,
 				5C0B6FB52566648900D0CA69 /* XDMessageCell.m in Sources */,
+				5C64BEBC2581BD9D001B1756 /* XDCheckView.m in Sources */,
 				5C0B6F51256519A100D0CA69 /* XDDictionary.m in Sources */,
 				5CDC6BF625676B83007F95E0 /* XDMessageModel.m in Sources */,
 				5C0B6F3A2565168C00D0CA69 /* XDString.m in Sources */,

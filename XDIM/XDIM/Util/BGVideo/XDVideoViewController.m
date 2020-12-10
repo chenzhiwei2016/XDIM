@@ -55,7 +55,7 @@
         
         self.blackView = [[UIView alloc] initWithFrame:self.view.bounds];
         self.blackView.backgroundColor = [UIColor blackColor];
-        self.blackView.alpha = 0.7;
+        self.blackView.alpha = 0.6;
         [self.view addSubview:self.blackView];
     }
     
