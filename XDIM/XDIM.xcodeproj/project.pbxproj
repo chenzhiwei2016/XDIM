@@ -315,8 +315,8 @@
 		5C64BEB92581BD9D001B1756 /* Check */ = {
 			isa = PBXGroup;
 			children = (
-				5C64BEBA2581BD9D001B1756 /* XDCheckView.m */,
 				5C64BEBB2581BD9D001B1756 /* XDCheckView.h */,
+				5C64BEBA2581BD9D001B1756 /* XDCheckView.m */,
 			);
 			path = Check;
 			sourceTree = "<group>";

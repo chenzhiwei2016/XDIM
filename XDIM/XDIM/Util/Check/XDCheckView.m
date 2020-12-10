@@ -16,10 +16,11 @@ static CGFloat checkDuration = 0.2f;
 @end
 @implementation XDCheckView
 
+//初始化数据
 - (void)initSetting {
     self.backgroundColor = [UIColor clearColor];
     self.isSelected = NO;
-    self.unCheckColor = [UIColor grayColor];
+    self.unCheckColor = [UIColor colorWithRed:(165.f/255.f) green:(166.f/255.f) blue:(167.f/255.f) alpha:1.f];
     self.checkColor = [UIColor redColor];
     self.checkBox = Square;
     self.checkState = Right;
@@ -29,6 +30,12 @@ static CGFloat checkDuration = 0.2f;
 
 - (void)drawRect:(CGRect)rect {
     [[UIColor clearColor] set];
+    
+    for (CALayer *layer in self.layer.sublayers) {
+        [layer removeAllAnimations];
+        [layer removeFromSuperlayer];
+    }
+    
     //画线条
     switch (self.checkBox) {
         case Square:[self squareBox:rect];break;
@@ -143,20 +150,13 @@ static CGFloat checkDuration = 0.2f;
 
 //打钩
 - (void)box_right:(CGRect)rect layer:(CAShapeLayer *)shapeLayer {
-    
-    for (CALayer *layer in shapeLayer.sublayers) {
-        [layer removeAllAnimations];
-    }
-    
     CGFloat width = rect.size.width;
     CGFloat height = rect.size.height;
     UIBezierPath *path = [UIBezierPath bezierPath];
     path.lineJoinStyle = kCGLineJoinRound;
-    path.lineWidth = lineWidth;
     [path moveToPoint:CGPointMake(width*2.2/10,height*5.4/10)];
     [path addLineToPoint:CGPointMake(width*4.5/10,height*7/10)];
     [path addLineToPoint:CGPointMake(width*7.8/10,height*3/10)];
-    [path stroke];
     CAShapeLayer *rightLayer = [CAShapeLayer layer];
     rightLayer.frame = self.bounds;
     rightLayer.fillColor =  [[UIColor clearColor] CGColor];
@@ -172,21 +172,14 @@ static CGFloat checkDuration = 0.2f;
 
 //打叉
 - (void)box_wrong:(CGRect)rect layer:(CAShapeLayer *)shapeLayer {
-    
-    for (CALayer *layer in shapeLayer.sublayers) {
-        [layer removeAllAnimations];
-    }
-    
     CGFloat width = rect.size.width;
     CGFloat height = rect.size.height;
     UIBezierPath *path = [UIBezierPath bezierPath];
     path.lineJoinStyle = kCGLineJoinRound;
-    path.lineWidth = lineWidth;
     [path moveToPoint:CGPointMake(width*2.2/10,height*3/10)];
     [path addLineToPoint:CGPointMake(width*7.8/10,height*7/10)];
     [path moveToPoint:CGPointMake(width*7.8/10,height*3/10)];
     [path addLineToPoint:CGPointMake(width*2.2/10,height*7/10)];
-    [path stroke];
     CAShapeLayer *rightLayer = [CAShapeLayer layer];
     rightLayer.frame = self.bounds;
     rightLayer.fillColor =  [[UIColor clearColor] CGColor];
