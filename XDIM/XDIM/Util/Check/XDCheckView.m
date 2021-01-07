@@ -54,6 +54,9 @@ static CGFloat checkDuration = 0.2f;
     CGFloat width = rect.size.width;
     CGFloat height = rect.size.height;
     CGFloat coner = 1.0f/10.0f*width;
+    if (coner > 5.f) {
+        coner = 5.0f;
+    }
     UIBezierPath *path = [UIBezierPath bezierPath];
     path.lineJoinStyle = kCGLineJoinRound;
     [path moveToPoint:CGPointMake(coner, 0)];
